@@ -45,11 +45,20 @@ chmod +x ollama-deploy-sunil.sh
 3. Run the Installer
 Basic usage (default: CPU, port 3000)
 
+---
+
+
 sudo ./ollama-deploy-sunil.sh
 With GPU and custom port
 
+---
+
+
 sudo ./ollama-deploy-sunil.sh --gpu --port 8088
 With domain + SSL
+
+---
+
 
 sudo ./ollama-deploy-sunil.sh --domain ai.example.com
 📋 Usage Instructions
@@ -58,8 +67,14 @@ After installation:
 Web Interface (no domain):
 Visit http://<server-ip>:3000 in your browser
 
+---
+
+
 Web Interface (with domain):
 Visit https://your-domain.com
+
+---
+
 
 ⚙️ Management Commands
 The script installs a global CLI helper: ollama-manager
@@ -76,6 +91,9 @@ ollama-manager backup        # Backup Ollama and WebUI data
 🔐 Domain & SSL (Optional)
 To use a custom domain with HTTPS:
 
+---
+
+
 
 sudo ./ollama-deploy-sunil.sh --domain ai.yourdomain.com
 The script will:
@@ -86,6 +104,9 @@ Configure a reverse proxy
 
 Auto-issue a free Let's Encrypt SSL certificate
 
+---
+
+
 🧠 Example Models
 Once installed, open the web interface and download one of these:
 
@@ -95,6 +116,9 @@ gemma:2b
 
 phi3:mini
 
+---
+
+
 📂 Backup Location
 Backups are saved under:
 
@@ -103,6 +127,9 @@ Backups are saved under:
 Each backup includes:
 
 Ollama model data
+
+---
+
 
 Open WebUI config/settings
 
